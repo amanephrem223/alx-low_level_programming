@@ -1,19 +1,10 @@
-#include <stdio.h>
-
-void reset_to_98(int *);
+#include "main.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * reset_to_98 - a function to update teh reference of a pointer
+ * @n: pointer to n to be update
  */
-int main(void)
+void reset_to_98(int *n)
 {
-	int n;
-
-	n = 402;
-	printf("%d\n", n);
-	reset_to_98(&n);
-	printf("%d\n", n);
-	return (0);
+	*n =98;
 }
